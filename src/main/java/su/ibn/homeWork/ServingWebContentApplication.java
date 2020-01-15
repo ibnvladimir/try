@@ -1,4 +1,4 @@
-package su.ibn.sweater;
+package su.ibn.homeWork;
 
 
 import org.springframework.boot.SpringApplication;

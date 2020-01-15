@@ -7,25 +7,17 @@
     <body>
         <div>
             <form method="post">
-                <input type="text" name="text" placeholder="Введите сообщение" />
-                <input type="text" name="tag" placeholder="Тег" />
+                <input type="text" name="name" placeholder="Введите название страны" />
                 <button type="submit">Добавить</button>
             </form>
         </div>
-       <form method="post" action="filter">
-           <input type="text" name="filter" />
-           <button type="submit">Найти</button>
-       </form>
-        <div>Спиок сообщений</div>
 
-
-            {{#messages}}
+        <div>Спиок стран</div>
+            {{#countries}}
             <div>
-               <b>{{id}}</b>
-                <span>{{text}}</span>
-                <i>{{tag}}</i>
+                <span>{{name}}</span>
             </div>
-            {{/messages}}
+            {{/countries}}
 
     </body>
 </HTML>
